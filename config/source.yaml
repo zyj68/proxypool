@@ -1,33 +1,33 @@
 - type: clash
   options:
-    url: https://ghproxy.org/https://raw.githubusercontent.com/rxsweet/proxies/main/sub/mining.yaml
+    url: https://raw.githubusercontent.com/rxsweet/proxies/main/sub/mining.yaml
 - type: clash
   options:
-    url: https://ghproxy.org/https://raw.githubusercontent.com/rxsweet/proxies/main/sub/rx.yaml
+    url: https://raw.githubusercontent.com/rxsweet/proxies/main/sub/rx.yaml
 - type: clash
   options:
-    url: https://ghproxy.org/https://raw.githubusercontent.com/rxsweet/proxies/main/sub/srx.yaml
+    url: https://raw.githubusercontent.com/rxsweet/proxies/main/sub/srx.yaml
 - type: clash
   options:
-    url: https://ghproxy.org/https://raw.githubusercontent.com/rxsweet/proxies/main/sub/free.yaml
+    url: https://raw.githubusercontent.com/rxsweet/proxies/main/sub/free.yaml
 - type: clash
   options:
-    url: https://ghproxy.org/https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml
+    url: https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml
 - type: clash
   options:
     url: https://cdn.jsdelivr.net/gh/learnhard-cn/free_proxy_ss@main/config.yaml
 - type: clash
   options:
-    url: https://ghproxy.org/https://raw.githubusercontent.com/vxiaov/free_proxy_ss/main/clash/clash.provider.yaml
+    url: https://raw.githubusercontent.com/vxiaov/free_proxy_ss/main/clash/clash.provider.yaml
 - type: clash
   options:
-    url: https://ghproxy.org/https://github.com/ermaozi/get_subscribe/blob/main/subscribe/clash.yml
+    url: https://github.com/ermaozi/get_subscribe/blob/main/subscribe/clash.yml
 - type: clash
   options:
-    url: https://ghproxy.org/https://github.com/anaer/Sub/blob/main/clash.yaml
+    url: https://github.com/anaer/Sub/blob/main/clash.yaml
 - type: clash
   options:
-    url: https://ghproxy.org/https://raw.githubusercontent.com/WilliamStar007/ClashX-V2Ray-TopFreeProxy/main/combine/clash.config.yaml
+    url: https://raw.githubusercontent.com/WilliamStar007/ClashX-V2Ray-TopFreeProxy/main/combine/clash.config.yaml
 
 
 - type: clash
