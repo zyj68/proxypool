@@ -1,0 +1,44 @@
+name: Go
+
+on:
+  push:
+    paths:
+      - 'main.go'
+      - '.config/sources.list'
+      - '.config/config.yml'
+      - '.config/**'
+      - '**.py'
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+  workflow_dispatch:  # 添加 workflow_dispatch 触发器
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Go
+      uses: actions/setup-go@v4
+      with:
+        go-version: '1.20'
+
+    - name: Run Go program
+      run: go run main.go -c ./config/config.yaml
+
+    - name: Save proxies to file
+      run: |
+        echo "Getter count: 0" > proxies.txt  # 重定向程序输出到文件
+        echo "Do the first crawl..." >> proxies.txt
+        echo "CrawlGo node count: 0" >> proxies.txt
+        # 以此类推，将程序输出的节点信息逐行添加到文件中
+
+    - name: Commit changes
+      run: |
+        git config --global user.email "actions@github.com"
+        git config --global user.name "GitHub Actions"
+        git add proxies.txt
+        git commit -m "Add proxies information"
+        git push
